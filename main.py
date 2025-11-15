@@ -2050,9 +2050,9 @@ async def web_server():
     
     runner = web.AppRunner(app)
     await runner.setup()
-    site = web.TCPSite(runner, '0.0.0.0', 5000)
+    site = web.TCPSite(runner, '0.0.0.0', 8000)
     await site.start()
-    logger.info("🌐 Web server started on port 5000")
+    logger.info("🌐 Web server started on port 8000")
 
 async def main():
     logger.info("🚀 Starting Advanced File Host Bot...")
